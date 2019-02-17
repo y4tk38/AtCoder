@@ -10,9 +10,7 @@ int main() {
     for(int i=0; i<N; i++){cin >> A[i];}
 
     sort(A,A+N);
-
-    int enemy_min  = A[0];
-    int enemy_next = A[1];
+    
     int i = 0;
 
     while(1){
