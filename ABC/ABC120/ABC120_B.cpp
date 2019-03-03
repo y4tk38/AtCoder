@@ -6,9 +6,9 @@ int main(){
     cin >> A >> B >> K;
 
     int count = 0;
-    int i=0;
+    int i=101;
     while(count < K){
-        i++;
+        i--;
         if(A%i == 0 && B%i == 0){count++;}
         
     }
