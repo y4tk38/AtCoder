@@ -16,8 +16,6 @@ int main(){
     int N,M;
     cin >> N >> M;
 
-    
-
     int a = 2;
     int m = M;
     while (m >= a * a) {
@@ -28,7 +26,6 @@ int main(){
             a++;
         }
     }
-
     v.push_back(m);
 
     int ans = dfs(v.size(),M,N);
