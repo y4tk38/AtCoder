@@ -4,8 +4,10 @@
             "name": "Mac",
             "includePath": [
                 "${workspaceFolder}/**",
+                "/usr/local/Cellar/gcc/6.3.0_1/include/c++/6.3.0",
                 "/usr/local/Cellar/gcc/6.3.0_1/include/c++/6.3.0/tr1",
                 "/usr/local/Cellar/gcc/6.3.0_1/include/c++/6.3.0",
+                "/usr/local/Cellar/gcc/6.3.0_1/include/c++/6.3.0/x86_64-apple-darwin15.6.0/i386",
                 "/usr/local/Cellar/gcc/6.3.0_1/include/c++/6.3.0/x86_64-apple-darwin15.6.0"
             ],
             "defines": [],
