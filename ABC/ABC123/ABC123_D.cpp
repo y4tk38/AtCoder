@@ -14,22 +14,22 @@ int main(){
     rep(i,Y) cin >> B[i];
     rep(i,Z) cin >> C[i];
     sort(C, C + Z, greater<ll>());
-    priority_queue<pair<ll,int>> pairs;
+    priority_queue<pair<ll,int>> pairq;
     
     rep(i,X){
         rep(j,Y){
-            pairs.push(make_pair(A[i] + B[j] + C[0], 0));
+            pairq.push(make_pair(A[i] + B[j] + C[0], 0));
         }
     }
 
     for(int i = 0; i < K; i++){
-        auto top = pairs.top();
-        pairs.pop();
+        auto top = pairq.top();
+        pairq.pop();
         cout << top.first << endl;
         if(top.second == Z - 1){
             continue;
         }
-        pairs.push({top.first - C[top.second] + C[top.second + 1], top.second + 1});
+        pairq.push({top.first - C[top.second] + C[top.second + 1], top.second + 1});
     }
 
 
